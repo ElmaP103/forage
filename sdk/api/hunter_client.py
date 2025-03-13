@@ -1,6 +1,7 @@
-from typing import Dict, Optional
+from typing import Dict
 import httpx
 from urllib.parse import urljoin
+
 
 class HunterAPIClient:
     """Hunter.io API client implementation."""

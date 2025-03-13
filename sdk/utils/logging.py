@@ -26,4 +26,4 @@ def setup_logging(
     logger = logging.getLogger('sdk')
     logger.setLevel(level)
     logger.addHandler(handler)
-    logger.propagate = False 
+    logger.propagate = False

@@ -2,6 +2,7 @@ from typing import Dict, Optional, TypeVar, Generic
 
 T = TypeVar('T')
 
+
 class MemoryStorage(Generic[T]):
     """In-memory storage implementation."""
 

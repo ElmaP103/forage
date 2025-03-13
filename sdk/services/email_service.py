@@ -54,7 +54,7 @@ class EmailVerificationService:
             ValidationError: If email format is invalid
         """
         self._validate_email(email)
-        
+
         cached_result = self._storage.get(email)
         if cached_result is not None:
             return cached_result
@@ -69,7 +69,7 @@ class EmailVerificationService:
             is_webmail=api_result.get('webmail', False),
             is_deliverable=api_result.get('deliverable'),
         )
-        
+
         self._storage.save(email, verification_result)
         return verification_result
 

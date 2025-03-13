@@ -1,5 +1,5 @@
 import time
-from typing import Dict, Generic, Optional, TypeVar, Union
+from typing import Dict, Generic, Optional, TypeVar
 
 T = TypeVar('T')
 
@@ -72,4 +72,4 @@ class TTLStorage(Generic[T]):
             Dictionary of all valid key-value pairs
         """
         self.clear_expired()
-        return {k: v[0] for k, v in self._storage.items()} 
+        return {k: v[0] for k, v in self._storage.items()}

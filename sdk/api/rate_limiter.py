@@ -1,5 +1,4 @@
 import time
-from typing import Optional
 from datetime import datetime, timedelta
 
 
@@ -42,4 +41,4 @@ class RateLimiter:
     def wait(self) -> None:
         """Wait until a request slot is available."""
         while not self.acquire():
-            time.sleep(0.1) 
+            time.sleep(0.1)

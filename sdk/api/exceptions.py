@@ -14,17 +14,14 @@ class HunterAPIError(Exception):
 
 class APIKeyError(HunterAPIError):
     """Raised when there's an issue with the API key."""
-
     pass
 
 
 class RateLimitError(HunterAPIError):
     """Raised when API rate limit is exceeded."""
-
     pass
 
 
 class ValidationError(Exception):
     """Raised when there's an issue with input validation."""
-
-    pass 
+    pass

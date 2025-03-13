@@ -42,4 +42,4 @@ def with_retry(
             raise last_exception
 
         return cast(Callable[..., T], wrapper)
-    return decorator 
+    return decorator

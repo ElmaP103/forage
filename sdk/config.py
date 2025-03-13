@@ -1,5 +1,3 @@
-
-
 from dataclasses import dataclass
 from typing import Optional
 
@@ -75,4 +73,4 @@ class Config:
         load_dotenv()
         return cls(
             api_key=os.getenv('HUNTER_API_KEY'),
-        ) 
+        )
